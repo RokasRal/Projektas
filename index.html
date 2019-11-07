@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>BasketBall Simulator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <div class="text-center" style="padding:50px 0">
+        <div class="logo">login</div>
+        <!-- Main Form -->
+        <div class="login-form-1">
+          <form id="login-form" class="text-left">
+            <div class="login-form-main-message"></div>
+            <div class="main-login-form">
+              <div class="login-group">
+                <div class="form-group">
+                  <label for="lg_username" class="sr-only">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lg_username"
+                    name="lg_username"
+                    placeholder="username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lg_password" class="sr-only">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="lg_password"
+                    name="lg_password"
+                    placeholder="password"
+                  />
+                </div>
+                <div class="form-group login-group-checkbox">
+                  <input type="checkbox" id="lg_remember" name="lg_remember" />
+                  <label for="lg_remember">remember</label>
+                </div>
+              </div>
+              <button type="submit" class="login-button">
+                <i class="fa fa-chevron-right"></i>
+                submit
+              </button>
+            </div>
+            <div class="etc-login-form">
+              <p>forgot your password? <a href="#">click here</a></p>
+              <p>new user? <a href="#">create account</a></p>
+            </div>
+          </form>
+        </div>
+        <!-- end:Main Form -->
+      </div>
+      <a href="#" class="close1"><h2>X</h2></a>
+    </div>
+    <div class="register">
+      <form
+        class="form-horizontal"
+        action=""
+        method="POST"
+        style="margin: auto;"
+      >
+        <fieldset>
+          <div id="legend">
+            <legend class="">Register</legend>
+          </div>
+          <div class="control-group">
+            <!-- Username -->
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder=""
+                class="input-xlarge"
+              />
+              <p class="help-block">
+                Username can contain any letters or numbers, without spaces
+              </p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <!-- E-mail -->
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder=""
+                class="input-xlarge"
+              />
+              <p class="help-block">Please provide your E-mail</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <!-- Password-->
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder=""
+                class="input-xlarge"
+              />
+              <p class="help-block">Password should be at least 4 characters</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <!-- Password -->
+            <label class="control-label" for="password_confirm"
+              >Password (Confirm)</label
+            >
+            <div class="controls">
+              <input
+                type="password"
+                id="password_confirm"
+                name="password_confirm"
+                placeholder=""
+                class="input-xlarge"
+              />
+              <p class="help-block">Please confirm password</p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+              <button class="btn btn-success">Register</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <a href="#" class="close2"><h2>X</h2></a>
+    </div>
+
+    <div class="all">
+      <div class="container-liquid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+          <a class="navbar-brand ml-4" href="#">BasketBall SIM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="registerButton nav-link text-white" href="#"
+                  >Register <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mr-4">
+                <a class="nav-link text-white" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id="picture" class="picture">
+          <img
+            src="./media/Basketball Simulator-20190917T131326Z-001/Basketball Simulator/nba-basketball-travel-packages.png"
+            alt=""
+          />
+          <div id="front">
+            <h1>BasketBall Simulator</h1>
+            <button
+              type="button"
+              id="button loginBtn"
+              class="openLogin btn btn-light"
+            >
+              Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="images">
+          <div id="imgCard1">
+            <img
+              src="./media/Basketball Simulator-20190917T131326Z-001/Basketball Simulator/League.png"
+              alt=""
+            />
+            <p id="description">Create a League</p>
+          </div>
+          <div id="imgCard2">
+            <img
+              src="./media/Basketball Simulator-20190917T131326Z-001/Basketball Simulator/Rogue_(European_Team)logo_square.png"
+              alt=""
+            />
+            <p id="description">Create a League</p>
+          </div>
+          <div id="imgCard3">
+            <img
+              src="./media/Basketball Simulator-20190917T131326Z-001/Basketball Simulator/1fd8c13703d95609fed6f779b59f41cb_meeting-icon-png-presentation-icon-board-meeting-icon-meeting-icon--4.png"
+              alt=""
+            />
+            <p id="description">Create a League</p>
+          </div>
+
+          <div id="imgCard4">
+            <img
+              src="./media/Basketball Simulator-20190917T131326Z-001/Basketball Simulator/important-person_318-10744.jpg"
+              alt=""
+            />
+            <p id="description">Create a League</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/addElement.js"></script>
+  </body>
+</html>

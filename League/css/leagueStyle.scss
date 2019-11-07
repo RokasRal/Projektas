@@ -1,0 +1,47 @@
+$backround:rgb(228, 224, 224);
+$footerBG:rgb(246, 237, 237);
+body{
+    background-color: $backround;
+      font-family: "Roboto", sans-serif;font-family: 'Source Sans Pro', sans-serif;
+}
+.header{
+    width: 95.5%;
+    margin: auto;
+    
+    font-weight: bold;
+    border-radius: 20px;
+   
+   margin-bottom: 2em;
+   .selected{
+       color:rgb(36, 163, 36);
+       background-color: $backround;
+   }
+}
+
+.body{
+    
+    margin: auto;
+    width: 80%;
+    height: 40em;
+    background-color:white; 
+    border-radius: 5%;
+#bestPlayers{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 1em  2%;
+    grid-template-columns: 10% auto 2%;
+    h1{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        text-align: center;
+    }
+}
+}
+
+.footer{
+    background-color:$footerBG; 
+    height: 11.5em;
+     width: 100%;
+     margin-top:1em;
+}
